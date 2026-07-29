@@ -89,10 +89,10 @@ export function TimelinePage() {
                   key={p.key}
                   type="button"
                   onClick={() => scrollToPeriod(p.key)}
-                  className={`rounded-full px-5 py-2 text-sm font-medium transition duration-300 ${
+                  className={`rounded-full px-5 py-2 text-sm font-medium transition-[color,background-color,border-color,box-shadow] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                     active
-                      ? 'scale-105 bg-muted text-white shadow-md shadow-muted/25'
-                      : 'border border-muted/25 text-muted hover:border-muted hover:text-ink'
+                      ? 'border border-transparent bg-muted text-white shadow-md shadow-muted/20'
+                      : 'border border-muted/25 bg-transparent text-muted hover:border-muted hover:text-ink'
                   }`}
                 >
                   {locale === 'en' ? p.labelEn : p.label}
@@ -172,7 +172,7 @@ export function TimelinePage() {
                         <Reveal
                           as="article"
                           variant="grow"
-                          delay={Math.min(eventIndex * 80, 160)}
+                          delay={Math.min(eventIndex * 100, 200)}
                           className={`relative grid gap-6 md:grid-cols-2 md:gap-12 ${
                             isRight ? '' : 'md:[&>*:first-child]:order-2'
                           }`}
@@ -230,7 +230,7 @@ export function TimelinePage() {
                                 alt=""
                                 loading="lazy"
                                 decoding="async"
-                                className="aspect-[16/10] w-full object-cover transition duration-500 hover:scale-[1.02]"
+                                className="reveal-media-zoom aspect-[16/10] w-full object-cover"
                               />
                             </div>
                             <p className="mt-4 text-sm leading-6 text-muted">
