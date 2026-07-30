@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type MouseEvent } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { useLanguage } from '../../i18n/LanguageContext'
+import logoMark from '../../assets/images/logo.png'
 
 const links = [
   { to: '/', key: 'home' as const },
@@ -41,7 +42,6 @@ export function Header({ variant = 'light' }: HeaderProps) {
   const isDark = variant === 'dark' || variant === 'overlay'
   const text = isDark ? 'text-white' : 'text-ink'
   const muted = isDark ? 'text-white/80' : 'text-muted'
-  const logo = isDark ? 'text-white' : 'text-primary'
   const border = isDark ? 'border-white/10' : 'border-muted/15'
   const bg =
     variant === 'overlay'
@@ -60,9 +60,24 @@ export function Header({ variant = 'light' }: HeaderProps) {
         <Link
           to="/"
           onClick={guardNavClick}
-          className={`font-serif text-xl font-bold tracking-tight md:text-2xl ${logo}`}
+          className="flex items-center gap-2.5"
+          aria-label={t.brand}
         >
-          {t.brand}
+          <img
+            src={logoMark}
+            alt=""
+            width={52}
+            height={52}
+            className="size-11 object-contain md:size-[52px]"
+            decoding="async"
+          />
+          <span
+            className={`font-serif text-lg font-bold tracking-tight md:text-xl ${
+              isDark ? 'text-white' : 'text-primary'
+            }`}
+          >
+            {t.brand}
+          </span>
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">

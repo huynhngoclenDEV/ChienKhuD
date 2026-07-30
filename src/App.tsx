@@ -41,7 +41,7 @@ export default function App() {
   return (
     <LanguageProvider>
       <AudioProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
           <ScrollToTop />
           <Suspense fallback={<PageFallback />}>
             <Routes>

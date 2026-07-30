@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../../i18n/LanguageContext'
 import { SITE, MAPS_DIRECTIONS_URL } from '../../data/content'
+import logoMark from '../../assets/images/logo.png'
 
 export function Footer() {
   const { t } = useLanguage()
@@ -10,7 +11,18 @@ export function Footer() {
     <footer className="border-t border-muted/10 bg-cream-muted">
       <div className="mx-auto grid max-w-[1280px] gap-10 px-4 py-16 md:grid-cols-3 md:px-16">
         <div>
-          <p className="font-serif text-xl font-bold text-primary">{t.brand}</p>
+          <Link to="/" className="inline-flex items-center gap-3" aria-label={t.brand}>
+            <img
+              src={logoMark}
+              alt=""
+              width={56}
+              height={56}
+              className="size-14 object-contain"
+              loading="lazy"
+              decoding="async"
+            />
+            <p className="font-serif text-xl font-bold text-primary">{t.brand}</p>
+          </Link>
           <p className="mt-4 max-w-md text-sm leading-6 text-muted">
             {t.footer.about}
           </p>

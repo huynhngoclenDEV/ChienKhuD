@@ -90,6 +90,12 @@ export function AudioProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const audio = audioRef.current
     if (!audio) return
+    // Only fetch media after the player is shown — avoids requests on every page load.
+    if (!isVisible) {
+      setCurrentTime(0)
+      setDuration(track.durationSec)
+      return
+    }
     audio.src = track.src
     audio.load()
     setCurrentTime(0)
@@ -101,7 +107,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
         setIsPlaying(false)
       })
     }
-  }, [track.src, track.durationSec]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [track.src, track.durationSec, isVisible]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     const audio = audioRef.current

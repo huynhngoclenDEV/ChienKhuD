@@ -127,7 +127,7 @@ export function VisitPage() {
         <div className="mt-8 grid gap-6 lg:grid-cols-2">
           <img
             src={sitePlan}
-            alt="Site plan"
+            alt=""
             loading="lazy"
             className="h-72 w-full border border-muted/15 object-cover md:h-[360px]"
           />

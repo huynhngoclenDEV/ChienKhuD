@@ -120,7 +120,7 @@ export const translations = {
         'Xe ô tô: Theo QL13 / hướng Bắc Tân Uyên, đến Ấp Đá Bàn theo biển Di tích Chiến khu Đ.',
       byBus:
         'Xe buýt / xe trung chuyển: Các tuyến liên huyện đến Bắc Tân Uyên, đi tiếp đến khu tưởng niệm hồ Đá Bàn.',
-      planLabel: 'Sơ đồ mặt bằng di tích',
+      planLabel: 'Cảnh quan khu tưởng niệm',
       zone1: 'Khu vực 1 (≈ 15,1 ha)',
       zone1Desc:
         'Khu bảo vệ chính của khu tưởng niệm — không gian lễ nghi và dấu tích gốc.',
@@ -274,7 +274,7 @@ export const translations = {
         'By car: Take QL13 toward Bac Tan Uyen, then follow signs to Da Ban / War Zone D.',
       byBus:
         'By bus: Inter-district routes to Bac Tan Uyen, then continue to the Da Ban Lake memorial.',
-      planLabel: 'Site plan',
+      planLabel: 'Memorial landscape',
       zone1: 'Zone 1 (≈ 15.1 ha)',
       zone1Desc:
         'Core protected memorial area — ceremonial space and original traces.',

@@ -4,6 +4,12 @@ import gallery3 from '../assets/images/gallery-3.jpg'
 import gallery4 from '../assets/images/gallery-4.jpg'
 import gallery5 from '../assets/images/gallery-5.jpg'
 import gallery6 from '../assets/images/gallery-6.jpg'
+import gallery7 from '../assets/images/gallery-7.jpg'
+import gallery8 from '../assets/images/gallery-8.jpg'
+import gallery9 from '../assets/images/gallery-9.jpg'
+import gallery10 from '../assets/images/gallery-10.jpg'
+import gallery11 from '../assets/images/gallery-11.jpg'
+import gallery12 from '../assets/images/gallery-12.jpg'
 import timeline1 from '../assets/images/timeline-1.jpg'
 import timeline2 from '../assets/images/timeline-2.jpg'
 import timeline3 from '../assets/images/timeline-3.jpg'
@@ -75,56 +81,110 @@ export const galleryItems = [
   {
     id: 1,
     image: gallery1,
-    category: 'archive' as GalleryCategory,
-    titleVn: 'Minh họa: họp tại căn cứ',
-    titleEn: 'Illustration: meeting at base',
-    descVn: 'Ảnh minh họa từ thiết kế Figma — chưa phải tư liệu gốc bảo tàng.',
-    descEn: 'Design mock from Figma — not an official archival photo.',
+    category: 'current' as GalleryCategory,
+    titleVn: 'Bia Làng chiến đấu 5 xã',
+    titleEn: 'Five-commune fighting village stele',
+    descVn: 'Bia tưởng niệm với câu thơ của Huỳnh Văn Nghệ tại khu di tích.',
+    descEn: 'Memorial stele with a verse by Huynh Van Nghe at the historic site.',
   },
   {
     id: 2,
     image: gallery2,
-    category: 'video' as GalleryCategory,
-    titleVn: 'Phim tài liệu (placeholder)',
-    titleEn: 'Documentary (placeholder)',
-    descVn: 'Khung giao diện video mẫu trong Figma, chưa gắn phim thật.',
-    descEn: 'Figma video UI mock — no real film attached yet.',
+    category: 'current' as GalleryCategory,
+    titleVn: 'Công trình thờ tự trong khu di tích',
+    titleEn: 'Shrine building at the site',
+    descVn: 'Ngôi nhà truyền thống mái ngói đỏ giữa rừng cao su Đất Cuốc.',
+    descEn: 'Traditional red-tiled shrine amid the Dat Cuoc rubber forest.',
   },
   {
     id: 3,
     image: gallery3,
     category: 'current' as GalleryCategory,
-    titleVn: 'Công trình tưởng niệm',
-    titleEn: 'Memorial pavilion',
-    descVn: 'Ảnh kiến trúc tưởng niệm từ bộ mockup — cần thay bằng ảnh khu Đá Bàn thật.',
-    descEn: 'Memorial architecture from mockup — replace with real Da Ban photos.',
+    titleVn: 'Nhà tưởng niệm Tổ quốc ghi công',
+    titleEn: 'Fatherland Remembers pavilion',
+    descVn: 'Bàn thờ và bia ghi danh trong không gian tưởng niệm.',
+    descEn: 'Altar and memorial steles inside the commemorative pavilion.',
   },
   {
     id: 4,
     image: gallery4,
     category: 'archive' as GalleryCategory,
-    titleVn: 'Hiện vật trưng bày (mock)',
-    titleEn: 'Exhibit artifacts (mock)',
-    descVn: 'Nón cối, quân phục, túi đeo — ảnh minh họa thiết kế, chưa xác thực nguồn.',
-    descEn: 'Helmet, uniform, satchel — design illustration, source not verified.',
+    titleVn: 'Mô hình làng kháng chiến chống Pháp',
+    titleEn: 'Anti-French resistance village model',
+    descVn: 'Biển giới thiệu mô hình làng kháng chiến tại khu trưng bày ngoài trời.',
+    descEn: 'Sign for the outdoor anti-French resistance village model.',
   },
   {
     id: 5,
     image: gallery5,
-    category: 'current' as GalleryCategory,
-    titleVn: 'Đường rừng nhiệt đới',
-    titleEn: 'Tropical forest path',
-    descVn: 'Ảnh phong cảnh rừng từ mockup — dùng tạm, nên thay ảnh hiện trạng di tích.',
-    descEn: 'Forest stock/mock photo — replace with on-site images.',
+    category: 'archive' as GalleryCategory,
+    titleVn: 'Lán trại trong rừng',
+    titleEn: 'Thatched huts in the forest',
+    descVn: 'Mô hình nhà tranh vách phên nứa tái hiện căn cứ trong rừng.',
+    descEn: 'Thatched bamboo-wall huts reconstructing the wartime forest base.',
   },
   {
     id: 6,
     image: gallery6,
+    category: 'archive' as GalleryCategory,
+    titleVn: 'Căn cứ Khu ủy Khu 7 (1946–1947)',
+    titleEn: '7th Zone Party Committee base (1946–1947)',
+    descVn: 'Biển mô hình căn cứ Khu ủy Khu 7 thời kỳ đầu kháng chiến.',
+    descEn: 'Sign for the early-resistance 7th Zone Party Committee base model.',
+  },
+  {
+    id: 7,
+    image: gallery7,
     category: 'current' as GalleryCategory,
-    titleVn: 'Sai địa điểm (Bình Giã)',
-    titleEn: 'Wrong site (Binh Gia)',
-    descVn: 'Đây là tượng đài Bình Giã (BR-VT), không phải Chiến khu Đ — sẽ thay khi có ảnh thật.',
-    descEn: 'This is Binh Gia Victory Monument — not War Zone D. To be replaced.',
+    titleVn: 'Tượng đài chi tiết nhân vật',
+    titleEn: 'Monument figure detail',
+    descVn: 'Cận cảnh nhóm tượng trên đài tưởng niệm.',
+    descEn: 'Close-up of sculpted figures on the memorial monument.',
+  },
+  {
+    id: 8,
+    image: gallery8,
+    category: 'current' as GalleryCategory,
+    titleVn: 'Nhà trưng bày / hội trường',
+    titleEn: 'Exhibition / assembly hall',
+    descVn: 'Công trình mái ngói cam trong khu vực di tích.',
+    descEn: 'Orange-tiled hall within the historic site grounds.',
+  },
+  {
+    id: 9,
+    image: gallery9,
+    category: 'archive' as GalleryCategory,
+    titleVn: 'Mô hình Miếu Bà Đất Cuốc',
+    titleEn: 'Model: Shrine of Lady in Dat Cuoc',
+    descVn: 'Mô hình miếu truyền thống gắn với vùng đất Đất Cuốc.',
+    descEn: 'Scale model of the traditional Dat Cuoc shrine.',
+  },
+  {
+    id: 10,
+    image: gallery10,
+    category: 'current' as GalleryCategory,
+    titleVn: 'Nhà dài truyền thống',
+    titleEn: 'Traditional longhouse pavilion',
+    descVn: 'Công trình cột gỗ mái ngói trong khu tưởng niệm.',
+    descEn: 'Wooden-column tiled pavilion in the memorial area.',
+  },
+  {
+    id: 11,
+    image: gallery11,
+    category: 'current' as GalleryCategory,
+    titleVn: 'Toàn cảnh tượng đài',
+    titleEn: 'Monument overview',
+    descVn: 'Đài tưởng niệm với hai cánh phù điêu và cột trung tâm.',
+    descEn: 'Memorial with twin relief wings and central pillar.',
+  },
+  {
+    id: 12,
+    image: gallery12,
+    category: 'archive' as GalleryCategory,
+    titleVn: 'Chòi nghỉ trong rừng',
+    titleEn: 'Open forest shelters',
+    descVn: 'Mô hình chòi cột gỗ mái tranh trong không gian căn cứ.',
+    descEn: 'Open thatched shelters reconstructing base life in the forest.',
   },
 ]
 
@@ -218,11 +278,14 @@ export const timelineEvents = [
   },
 ]
 
-/** File thật trong public/audio/ (đổi tên từ bản gốc trong src/assets/audio). */
+const audioUrl = (file: string) =>
+  `${import.meta.env.BASE_URL}tracks/${file}`
+
+/** File thật trong public/tracks/ (đổi tên từ bản gốc trong src/assets/audio). */
 export const playlist = [
   {
     id: 't1',
-    src: '/audio/01-mo-dau.m4a',
+    src: audioUrl('01-mo-dau.m4a'),
     periodVn: 'GIỚI THIỆU',
     periodEn: 'INTRODUCTION',
     titleVn: 'Mở đầu',
@@ -238,7 +301,7 @@ export const playlist = [
   },
   {
     id: 't2',
-    src: '/audio/02-vi-tri-hinh-thanh.m4a',
+    src: audioUrl('02-vi-tri-hinh-thanh.m4a'),
     periodVn: 'HÌNH THÀNH',
     periodEn: 'FORMATION',
     titleVn: 'Vị trí & giai đoạn hình thành',
@@ -255,7 +318,7 @@ export const playlist = [
   },
   {
     id: 't3',
-    src: '/audio/03-chong-phap-1-2.m4a',
+    src: audioUrl('03-chong-phap-1-2.m4a'),
     periodVn: 'THỜI KỲ CHỐNG PHÁP',
     periodEn: 'ANTI-FRENCH PERIOD',
     titleVn: 'Kháng chiến chống Pháp (đoạn 1–2)',
@@ -272,7 +335,7 @@ export const playlist = [
   },
   {
     id: 't4',
-    src: '/audio/04-chong-phap-3-4.m4a',
+    src: audioUrl('04-chong-phap-3-4.m4a'),
     periodVn: 'THỜI KỲ CHỐNG PHÁP',
     periodEn: 'ANTI-FRENCH PERIOD',
     titleVn: 'Kháng chiến chống Pháp (đoạn 3–4)',
@@ -289,7 +352,7 @@ export const playlist = [
   },
   {
     id: 't5',
-    src: '/audio/05-chong-my-1-2.m4a',
+    src: audioUrl('05-chong-my-1-2.m4a'),
     periodVn: 'THỜI KỲ CHỐNG MỸ',
     periodEn: 'ANTI-AMERICAN PERIOD',
     titleVn: 'Kháng chiến chống Mỹ (đoạn 1–2)',
@@ -306,7 +369,7 @@ export const playlist = [
   },
   {
     id: 't6',
-    src: '/audio/06-chong-my-3.m4a',
+    src: audioUrl('06-chong-my-3.m4a'),
     periodVn: 'THỜI KỲ CHỐNG MỸ',
     periodEn: 'ANTI-AMERICAN PERIOD',
     titleVn: 'Kháng chiến chống Mỹ (đoạn 3)',
@@ -323,7 +386,7 @@ export const playlist = [
   },
   {
     id: 't7',
-    src: '/audio/07-chong-my-4-5.m4a',
+    src: audioUrl('07-chong-my-4-5.m4a'),
     periodVn: 'THỜI KỲ CHỐNG MỸ',
     periodEn: 'ANTI-AMERICAN PERIOD',
     titleVn: 'Kháng chiến chống Mỹ (đoạn 4–5)',
@@ -340,7 +403,7 @@ export const playlist = [
   },
   {
     id: 't8',
-    src: '/audio/08-tuong-niem-1.m4a',
+    src: audioUrl('08-tuong-niem-1.m4a'),
     periodVn: 'KHU TƯỞNG NIỆM',
     periodEn: 'MEMORIAL',
     titleVn: 'Khu tưởng niệm hiện nay (đoạn 1)',
@@ -357,7 +420,7 @@ export const playlist = [
   },
   {
     id: 't9',
-    src: '/audio/09-tuong-niem-2-3.m4a',
+    src: audioUrl('09-tuong-niem-2-3.m4a'),
     periodVn: 'KHU TƯỞNG NIỆM',
     periodEn: 'MEMORIAL',
     titleVn: 'Giá trị lịch sử – văn hóa',
@@ -374,7 +437,7 @@ export const playlist = [
   },
   {
     id: 't10',
-    src: '/audio/10-ket-thuc.m4a',
+    src: audioUrl('10-ket-thuc.m4a'),
     periodVn: 'KẾT THÚC',
     periodEn: 'CLOSING',
     titleVn: 'Kết thúc',
