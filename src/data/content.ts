@@ -431,9 +431,9 @@ export const playlist = [
     subtitleVn: 'Biểu tượng “Miền Đông gian lao mà anh dũng”',
     subtitleEn: 'Symbol of “hard yet heroic Eastern region”',
     descVn:
-      'Giá trị lịch sử–văn hóa của Chiến khu Đ và ý nghĩa câu nói “Chiến khu Đ còn, Sài Gòn mất”.',
+      'Giá trị lịch sử–văn hóa của Chiến khu Đ và bài thơ “Rừng nhớ người đi” của Huỳnh Văn Nghệ (1946).',
     descEn:
-      'Historical–cultural value of War Zone D and the meaning of “While War Zone D stands, Saigon falls”.',
+      'Historical–cultural value of War Zone D and Huynh Van Nghe’s poem “The Forest Remembers Those Who Left” (1946).',
   },
   {
     id: 't10',

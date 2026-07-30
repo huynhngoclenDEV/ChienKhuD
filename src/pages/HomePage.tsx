@@ -22,8 +22,11 @@ export function HomePage() {
           <h1 className="font-serif text-3xl font-bold uppercase leading-tight tracking-wide md:text-5xl lg:text-[52px]">
             {t.home.heroTitle}
           </h1>
-          <p className="mt-6 font-serif text-lg italic text-white/90 md:text-2xl">
+          <p className="mt-6 whitespace-pre-line font-serif text-lg italic leading-relaxed text-white/90 md:text-xl">
             {t.home.heroQuote}
+          </p>
+          <p className="mt-3 text-sm tracking-wide text-white/70">
+            {t.home.heroQuoteAttr}
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link

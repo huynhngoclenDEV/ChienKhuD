@@ -14,7 +14,7 @@ export const translations = {
     lang: 'VN/EN',
     footer: {
       about:
-        'Di tích lịch sử cấp quốc gia – căn cứ địa cách mạng miền Đông Nam Bộ, nơi gắn với câu nói “Chiến khu Đ còn, Sài Gòn mất”.',
+        'Di tích lịch sử cấp quốc gia – căn cứ địa cách mạng miền Đông Nam Bộ, nơi gắn với bài thơ “Rừng nhớ người đi” của Thi tướng Huỳnh Văn Nghệ (1946).',
       info: 'THÔNG TIN',
       address: 'Địa chỉ: Ấp Đá Bàn, Bắc Tân Uyên',
       facebook: 'Facebook',
@@ -30,7 +30,9 @@ export const translations = {
     },
     home: {
       heroTitle: 'CHIẾN KHU Đ - CĂN CỨ ĐỊA CÁCH MẠNG',
-      heroQuote: '“Chiến khu Đ còn, Sài Gòn mất”',
+      heroQuote:
+        '“Từ độ chàng đi vung kiếm thép,\nMịt mù khói lửa khuất binh nhung.\nRừng xanh thương nhớ như chinh phụ,\nHồi hộp nghe từng tin chiến công…”',
+      heroQuoteAttr: '— Huỳnh Văn Nghệ, Rừng nhớ người đi (1946)',
       ctaExplore: 'KHÁM PHÁ NGAY',
       ctaFilm: 'XEM THƯ VIỆN',
       introLabel: 'TẦM VÓC LỊCH SỬ',
@@ -52,21 +54,11 @@ export const translations = {
       bookTour: 'ĐẶT TOUR HƯỚNG DẪN',
     },
     contact: {
-      eyebrow: 'KẾT NỐI VỚI CHÚNG TÔI',
+      eyebrow: 'LIÊN HỆ',
       title: 'Gìn giữ hào khí',
       titleLine2: 'Chiến khu Đ',
-      formTitle: 'Gửi tin nhắn cho chúng tôi',
-      formDesc:
-        'Mọi thắc mắc về tham quan, đóng góp tư liệu hoặc hỗ trợ thông tin, vui lòng điền vào biểu mẫu dưới đây. Ban quản lý sẽ phản hồi trong thời gian sớm nhất.',
-      name: 'Họ và tên',
-      namePlaceholder: 'Nguyễn Văn A',
-      email: 'Email',
-      emailPlaceholder: 'example@email.com',
-      message: 'Nội dung',
-      messagePlaceholder: 'Nhập lời nhắn của bạn...',
-      submit: 'GỬI QUA EMAIL',
-      success:
-        'Đã mở ứng dụng email. Nếu không thấy cửa sổ mới, hãy gọi hoặc gửi thư trực tiếp cho Ban quản lý.',
+      infoDesc:
+        'Mọi thắc mắc về tham quan, đóng góp tư liệu hoặc hỗ trợ thông tin, vui lòng liên hệ trực tiếp Ban quản lý qua số điện thoại hoặc đến địa chỉ dưới đây.',
       infoTitle: 'Ban quản lý di tích',
       addressLabel: 'Địa chỉ di tích',
       address:
@@ -167,7 +159,7 @@ export const translations = {
     lang: 'VN/EN',
     footer: {
       about:
-        'A national historic site — revolutionary base of Southeast Vietnam, tied to the saying “While War Zone D stands, Saigon falls”.',
+        'A national historic site — revolutionary base of Southeast Vietnam, linked to the poem “The Forest Remembers Those Who Left” by poet-general Huynh Van Nghe (1946).',
       info: 'INFORMATION',
       address: 'Address: Da Ban, Bac Tan Uyen',
       facebook: 'Facebook',
@@ -183,7 +175,9 @@ export const translations = {
     },
     home: {
       heroTitle: 'WAR ZONE D - REVOLUTIONARY BASE',
-      heroQuote: '"While War Zone D stands, Saigon falls"',
+      heroQuote:
+        '“Từ độ chàng đi vung kiếm thép,\nMịt mù khói lửa khuất binh nhung.\nRừng xanh thương nhớ như chinh phụ,\nHồi hộp nghe từng tin chiến công…”',
+      heroQuoteAttr: '— Huynh Van Nghe, The Forest Remembers Those Who Left (1946)',
       ctaExplore: 'EXPLORE NOW',
       ctaFilm: 'VIEW GALLERY',
       introLabel: 'HISTORICAL SIGNIFICANCE',
@@ -205,21 +199,11 @@ export const translations = {
       bookTour: 'BOOK A GUIDED TOUR',
     },
     contact: {
-      eyebrow: 'CONNECT WITH US',
+      eyebrow: 'CONTACT',
       title: 'Preserve the spirit of',
       titleLine2: 'War Zone D',
-      formTitle: 'Send us a message',
-      formDesc:
-        'For visit questions, document contributions or information support, please fill in the form below. Management will respond as soon as possible.',
-      name: 'Full name',
-      namePlaceholder: 'John Doe',
-      email: 'Email',
-      emailPlaceholder: 'example@email.com',
-      message: 'Message',
-      messagePlaceholder: 'Enter your message...',
-      submit: 'SEND VIA EMAIL',
-      success:
-        'Your email app should open. If nothing appears, please call or email the management board directly.',
+      infoDesc:
+        'For visit questions, document contributions or information support, please contact the management board directly by phone or at the address below.',
       infoTitle: 'Site management board',
       addressLabel: 'Site address',
       address:

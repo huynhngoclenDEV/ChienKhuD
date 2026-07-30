@@ -1,4 +1,4 @@
-import { useState, type FormEvent, type ReactNode } from 'react'
+import { type ReactNode } from 'react'
 import { useLanguage } from '../i18n/LanguageContext'
 import { SITE, MAPS_DIRECTIONS_URL } from '../data/content'
 import { MapEmbed } from '../components/ui/MapEmbed'
@@ -7,24 +7,6 @@ import heroContact from '../assets/images/hero-contact.jpg'
 
 export function ContactPage() {
   const { t } = useLanguage()
-  const [submitted, setSubmitted] = useState(false)
-
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    const form = e.currentTarget
-    const data = new FormData(form)
-    const name = String(data.get('name') ?? '').trim()
-    const email = String(data.get('email') ?? '').trim()
-    const message = String(data.get('message') ?? '').trim()
-
-    const subject = encodeURIComponent(`[Chiến khu Đ] Liên hệ từ ${name}`)
-    const body = encodeURIComponent(
-      `Họ tên: ${name}\nEmail: ${email}\nĐiện thoại Ban quản lý: ${SITE.phone}\n\n${message}`,
-    )
-    const to = SITE.email || ''
-    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`
-    setSubmitted(true)
-  }
 
   const phoneHref = `tel:${SITE.phone.replace(/[^\d+]/g, '')}`
   const emailHref = SITE.email ? `mailto:${SITE.email}` : phoneHref
@@ -50,76 +32,13 @@ export function ContactPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-[1280px] gap-12 px-4 py-16 md:grid-cols-2 md:gap-20 md:px-16">
-        <Reveal>
-          <h2 className="font-serif text-3xl font-semibold text-ink">
-            {t.contact.formTitle}
-          </h2>
-          <p className="mt-4 max-w-lg text-base leading-6 text-muted">
-            {t.contact.formDesc}
-          </p>
-
-          <form onSubmit={onSubmit} className="mt-8 space-y-6">
-            <label className="block">
-              <span className="text-sm font-semibold tracking-wide text-muted">
-                {t.contact.name}
-              </span>
-              <input
-                required
-                name="name"
-                placeholder={t.contact.namePlaceholder}
-                className="mt-2 w-full border-0 bg-cream-dark px-4 py-[18px] text-base text-ink outline-none placeholder:text-muted-light transition focus:ring-2 focus:ring-primary/30"
-              />
-            </label>
-            <label className="block">
-              <span className="text-sm font-semibold tracking-wide text-muted">
-                {t.contact.email}
-              </span>
-              <input
-                required
-                type="email"
-                name="email"
-                placeholder={t.contact.emailPlaceholder}
-                className="mt-2 w-full border-0 bg-cream-dark px-4 py-[18px] text-base text-ink outline-none placeholder:text-muted-light transition focus:ring-2 focus:ring-primary/30"
-              />
-            </label>
-            <label className="block">
-              <span className="text-sm font-semibold tracking-wide text-muted">
-                {t.contact.message}
-              </span>
-              <textarea
-                required
-                name="message"
-                rows={5}
-                placeholder={t.contact.messagePlaceholder}
-                className="mt-2 w-full resize-y border-0 bg-cream-dark px-4 py-4 text-base text-ink outline-none placeholder:text-muted-light transition focus:ring-2 focus:ring-primary/30"
-              />
-            </label>
-            <button
-              type="submit"
-              className="inline-flex items-center gap-3 bg-primary px-10 py-3.5 text-sm font-semibold tracking-wider text-white transition hover:-translate-y-0.5 hover:bg-primary-dark"
-            >
-              {t.contact.submit}
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor">
-                <path d="M0 7l16-7-4 7 4 7L0 7z" />
-              </svg>
-            </button>
-            {submitted && (
-              <p className="animate-fade-in text-sm font-medium text-primary">
-                {t.contact.success}
-              </p>
-            )}
-          </form>
-        </Reveal>
-
-        <Reveal
-          delay={80}
-          className="relative overflow-hidden border border-muted/15 bg-cream-muted p-10"
-        >
+      <section className="mx-auto max-w-[1280px] px-4 py-16 md:px-16">
+        <Reveal className="relative mx-auto max-w-2xl overflow-hidden border border-muted/15 bg-cream-muted p-10">
           <div className="pointer-events-none absolute -right-10 -top-10 size-40 rounded-full bg-primary/5" />
           <h2 className="font-serif text-3xl font-semibold text-ink">
             {t.contact.infoTitle}
           </h2>
+          <p className="mt-4 text-base leading-6 text-muted">{t.contact.infoDesc}</p>
           <ul className="mt-10 space-y-8">
             <InfoRow
               label={t.contact.addressLabel}
