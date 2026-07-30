@@ -21,10 +21,8 @@ export const translations = {
       youtube: 'Youtube',
       rules: 'Quy định chung',
       copyright: 'BẢN QUYỀN',
-      copyrightText: '© Bản quyền thuộc Bảo tàng tỉnh Bình Dương',
+      copyrightText: '© Viện Công nghệ số — Trường Đại học Thủ Dầu Một',
       official: 'Cơ quan quản lý chính thức',
-      creditLabel: 'Đơn vị sáng tác',
-      creditUnit: 'Viện Công nghệ số — Trường Đại học Thủ Dầu Một',
     },
     audioBar: {
       title: 'Âm thanh Chiến khu',
@@ -168,10 +166,8 @@ export const translations = {
       youtube: 'Youtube',
       rules: 'General regulations',
       copyright: 'COPYRIGHT',
-      copyrightText: '© Copyright Binh Duong Provincial Museum',
+      copyrightText: '© Institute of Digital Technology — Thu Dau Mot University',
       official: 'Official management agency',
-      creditLabel: 'Created by',
-      creditUnit: 'Institute of Digital Technology — Thu Dau Mot University',
     },
     audioBar: {
       title: 'War Zone D Audio',

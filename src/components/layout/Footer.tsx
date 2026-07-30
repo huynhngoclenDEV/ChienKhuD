@@ -84,15 +84,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-
-      <div className="border-t border-muted/10">
-        <p className="mx-auto max-w-[1280px] px-4 py-5 text-center text-xs leading-5 text-muted md:px-16">
-          <span className="font-semibold tracking-wide text-ink/70">
-            {t.footer.creditLabel}:{' '}
-          </span>
-          {t.footer.creditUnit}
-        </p>
-      </div>
     </footer>
   )
 }
