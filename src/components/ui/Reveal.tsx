@@ -38,7 +38,7 @@ export function Reveal({
         el.classList.add('is-revealed')
         observer.disconnect()
       },
-      { rootMargin: '0px 0px -10% 0px', threshold: 0.08 },
+      { rootMargin: '0px 0px -6% 0px', threshold: 0.06 },
     )
 
     observer.observe(el)
