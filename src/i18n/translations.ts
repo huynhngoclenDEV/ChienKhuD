@@ -23,6 +23,8 @@ export const translations = {
       copyright: 'BẢN QUYỀN',
       copyrightText: '© Bản quyền thuộc Bảo tàng tỉnh Bình Dương',
       official: 'Cơ quan quản lý chính thức',
+      creditLabel: 'Đơn vị sáng tác',
+      creditUnit: 'Viện Công nghệ số — Trường Đại học Thủ Dầu Một',
     },
     audioBar: {
       title: 'Âm thanh Chiến khu',
@@ -168,6 +170,8 @@ export const translations = {
       copyright: 'COPYRIGHT',
       copyrightText: '© Copyright Binh Duong Provincial Museum',
       official: 'Official management agency',
+      creditLabel: 'Created by',
+      creditUnit: 'Institute of Digital Technology — Thu Dau Mot University',
     },
     audioBar: {
       title: 'War Zone D Audio',
