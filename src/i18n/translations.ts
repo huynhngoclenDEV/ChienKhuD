@@ -81,7 +81,7 @@ export const translations = {
     gallery: {
       title: 'Thư viện tư liệu',
       subtitle:
-        'Hiện đang dùng ảnh minh họa từ Figma (chưa phải tư liệu gốc). Bỏ ảnh thật vào src/assets/images/ để thay.',
+        '',
       all: 'Tất cả',
       current: 'Hiện trạng',
       archive: 'Tư liệu',
@@ -227,7 +227,7 @@ export const translations = {
     gallery: {
       title: 'Media library',
       subtitle:
-        'Currently using Figma mock images (not official archives). Drop real photos into src/assets/images/ to replace.',
+        '',
       all: 'All',
       current: 'Current',
       archive: 'Archive',
